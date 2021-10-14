@@ -1,0 +1,48 @@
+//구구단 만들기
+	// type1로 만들기 ----> 매개변수x 반환값x
+	public void dispGugudan() {
+		for(int i=2;i<=9;i++) {
+			printHeadLine(i+"단");
+			for(int j=1;j<=9;j++) {
+				System.out.println(i+"*"+j+"="+(i*j));
+			}
+			System.out.println();
+		}
+	}
+	
+	// type2로 만들기 ----> 매개변수x 반환값o
+	public String getGugudan() {
+		String res="";
+		for(int i=2;i<=9;i++) {
+			res+=i+"단\n";
+			for(int j=1;j<=9;j++) {
+				res +=i+"*"+j+"="+(i*j)+"\n";
+			}
+			res+="\n";
+		}
+		return res;
+	}
+	
+	// type3로 만들기 ----> 매개변수o 반환값x
+		public void gugudan(int i) {
+			for(i=2; i<=9; i++) {
+				System.out.println("="+i+"단=");
+				for(int j=1; j<=9; j++) {
+					System.out.println(i+"*"+j+"="+(i*j));
+				}
+				System.out.println();
+			}
+		}
+		
+	// type4로 만들기 ----> 매개변수o 반환값o
+		public String typeGugudan(int i) {
+			String res="";
+			for(i=2;i<=9;i++) {
+				res+="==="+i+"단===\n";
+				for(int j=1;j<=9;j++) {
+					res +=i+"*"+j+"="+(i*j)+"\n";
+				}
+				res+="\n";
+			}
+			return res;
+		}

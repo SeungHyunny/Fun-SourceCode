@@ -1,0 +1,15 @@
+// 로또번호 추출하기
+// 1~45 정수 중 임의의 수 6개 추출하는 로직(중복x)
+boolean[] filled = new boolean[45];
+			for(int i=0; i<7; i++) {
+				int lotto = (int)(Math.random()*45)+1;
+				if(filled[lotto-1]) {
+					i--;
+					continue;
+				}else {
+					filled[lotto-1]=true;
+					System.out.print(lotto);
+					System.out.print("\t");
+				}
+			}
+			System.out.println();

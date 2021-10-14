@@ -1,0 +1,10 @@
+// 직각삼각형 그리기 : 주어진 크기에 따라
+int size = Integer.parseInt(
+				JOptionPane.showInputDialog("직각삼각형의 크기:")
+		);
+		for(int i=1; i<=size; i++) {
+			for(int j=1; j<=i; j++) {
+				System.out.print("★");
+			}
+			System.out.println();
+		}
